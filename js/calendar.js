@@ -1,3 +1,5 @@
+var plusBtn = document.getElementById('plus-btn')
+
 // 이번달
 // 현재 날짜, 시각 객체 만들자
 var now = new Date();
@@ -34,7 +36,8 @@ const setCalendar = (year, month) => {
         // dateItemDiv.className = "date item";
         dateItemDiv.classList.add("date");      //<div class="date">date</div>
         dateItemDiv.classList.add("item");      //<div class="item">date</div>
-        dateItemDiv.innerHTML = i;              //<div class="date item">날짜</div>
+        dateItemDiv.onclick = (event) => plus(event);
+        dateItemDiv.innerHTML = String(i).padStart(2, 0);              //<div class="date item">날짜</div>
     
         // HTML에 .dates.container 자식으로 넣자
         datesContainerDiv.appendChild(dateItemDiv);
@@ -47,18 +50,6 @@ const setCalendar = (year, month) => {
     // CSS {grid-column-start: firstDay + 1;}
     firstDateDiv.style.gridColumnStart = firstDateDay + 1;
 
-    //토 : 파랑
-    let saturdayDivs = datesContainerDiv.querySelectorAll(`.date.item:nth-child(7n + ${7 - firstDateDay})`);
-    for(let dateItem of saturdayDivs){
-        dateItem.style.color = "blue";
-    }
-
-    //일 : 빨강
-    let sundayDivs = datesContainerDiv.querySelectorAll(`.date.item:nth-child(7n + ${(7 - firstDateDay + 1) % 7})`);
-
-    for(let dateItem of sundayDivs){
-        dateItem.style.color = "red";
-    }
 } 
 setCalendar(year, month);
 
@@ -83,3 +74,22 @@ rightDiv.onclick = () => {
     }
     setCalendar(year, month);
 };
+
+function plus(event){
+    
+    document.getElementsByClassName('price-div')[0].remove();
+    let priceDiv = document.createElement('div');
+    // priceDiv.innerText = `${event.target.innerHTML}`
+    let innerDiv = document.createElement('div');
+    innerDiv.className = "price-inner-div"
+    innerDiv.innerHTML = `<div id = "name">총금액</div><div id="total">${event.target.innerHTML}</div>`;
+    priceDiv.className = "price-div";
+    priceDiv.appendChild(innerDiv);
+
+    
+    plusBtn.before(priceDiv);
+}
+
+function addDiary(){
+    window.location.href = "/writeDiary.html";
+}
