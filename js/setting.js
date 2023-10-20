@@ -10,7 +10,7 @@ function check(){
     axios
         .post("http://localhost:3000/users/setProfile", {
             userid: id,
-            consume_month, consume_month
+            consume_month: consume_month
         })
         .then((response) => {
             console.log('프로필이 업데이트되었습니다.', response.data);

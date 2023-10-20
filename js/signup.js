@@ -90,7 +90,7 @@ function codeCheck() {
         console.error("Error during auth code check:", e);
         alert("에러가 발생했습니다.");
       });
-  }
+}
 
 function finalCheck(){
     var id = document.getElementById("id-input").value;

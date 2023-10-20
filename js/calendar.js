@@ -76,6 +76,14 @@ rightDiv.onclick = () => {
 };
 
 function plus(event){
+
+    // 선택된 날짜
+    const selectedDate = event.target.innerHTML;
+
+    // 로컬 스토리지에 저장
+    localStorage.setItem('selectedDate',selectedDate);
+
+    console.log(selectedDate);
     
     document.getElementsByClassName('price-div')[0].remove();
     let priceDiv = document.createElement('div');
