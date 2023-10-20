@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/writeDiary.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 </head>
 <body>
     <div id="head">
@@ -22,11 +24,11 @@
 
     <div class="title">오늘의 소비</div>
     <div class="coins">
-        <img src="images/coin1.png" class="coin" onclick="coinChoice(event)">
-        <img src="images/coin2.png" class="coin" onclick="coinChoice(event)">
-        <img src="images/coin3.png" class="coin" onclick="coinChoice(event)">
-        <img src="images/coin4.png" class="coin" onclick="coinChoice(event)">
-        <img src="images/coin5.png" class="coin" onclick="coinChoice(event)">
+        <img src="images/coin1.png" class="coin" onclick="coinChoice(event)" id="good">
+        <img src="images/coin2.png" class="coin" onclick="coinChoice(event)" id="fine">
+        <img src="images/coin3.png" class="coin" onclick="coinChoice(event)" id="soso">
+        <img src="images/coin4.png" class="coin" onclick="coinChoice(event)" id="poor">
+        <img src="images/coin5.png" class="coin" onclick="coinChoice(event)" id="bad">
     </div>
 
     <div id="plus-div" >

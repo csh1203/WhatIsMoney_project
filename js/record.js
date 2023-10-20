@@ -81,3 +81,21 @@ var d = document.getElementById('div');
 
 var finalPrice = didPrice - goalPrice;
 d.innerText = `${finalPrice}원 더 썼어요`
+
+// 메시지 불러오기
+function getcontent() {
+    const userid = localStorage.getItem("userid");
+
+    axios.post('http://localhost:3000/users/getcontent', {
+        userid: userid,
+    })
+    .then((response) => {
+        // 서버로부터 받은 응답 데이터를 콘솔에 출력
+        console.log(response.data);
+    })
+    .catch((error) => {
+        console.error('데이터를 불러오는 중 오류:', error);
+    });
+}
+
+getcontent();
