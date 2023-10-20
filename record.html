@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/record.css">
+</head>
+<body>
+    <main>
+        <div id="title"></div>
+
+        <div id="price-title">이번달 사용금액</div>
+        <div class="btns">
+            <button id="trans" class="btn" onclick="getTrans()">교통비</button>
+            <button id="food" class="btn" onclick="getFood()">식비</button>
+            <button id="hobby" class="btn" onclick="getHobby()">취미</button>
+            <button id="another" class="btn" onclick="getAnother()">기타</button>
+        </div>
+
+        <div class="result">
+            <div class="re">
+                <div class="result-title">교통비</div>
+                <div class="result-price">23000</div>
+            </div>
+            <div class="re">
+                <div class="result-title">식비</div>
+                <div class="result-price">23000</div>
+            </div>
+            <div class="re">
+                <div class="result-title">취미</div>
+                <div class="result-price">23000</div>
+            </div>
+            <div class="re">
+                <div class="result-title">기타</div>
+                <div class="result-price">23000</div>
+            </div>
+        </div>
+        <div class="caa">
+
+
+        <div id="final">
+            <div id="div"></div>
+            <div id="goal">
+                <div class="goal-title">목표 소비 금액</div>
+                <div class="goal-price" id="goal-price">20000</div>
+            </div>
+            <div id="did">
+                <div class="goal-title">총 소비 금액</div>
+                <div class="goal-price" id="did-price">315000</div>
+            </div>
+        </div>
+    </main>
+
+    
+
+    <div id="nav">
+        <iconify-icon icon="tabler:coin" id="choice" class="menu-icon"></iconify-icon>
+        <iconify-icon icon="majesticons:calendar"  class="menu-icon" onclick="location.href='/calendar.html'" ></iconify-icon>
+        <iconify-icon icon="icon-park-outline:me" class="menu-icon"></iconify-icon>
+    </div>
+
+      <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="js/record.js"></script>
+</body>
+</html>

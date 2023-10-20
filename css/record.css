@@ -1,0 +1,135 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nav{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 48px;
+    box-shadow : 0 -6px 10px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #D9D9D9
+}
+
+.menu-icon{
+    font-size: 27px;
+}
+
+#choice{
+    color: #A266BE;
+}
+
+main{
+    margin-top: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#price-title{
+    font-size: 20px;
+}
+
+.btns{
+    margin-top: 10px;
+}
+
+.btn{
+    width: 49px;
+    height: 20px;
+    margin-right: 7px;
+    background-color: white;
+    border: 1px solid #A266BE;
+    border-radius: 20px;
+    font-size: 11px;
+    color: #A266BE;
+}
+
+.result{
+    width: 100%;
+    height: 216px;
+    background-color: #FAF7FB;
+    margin-top: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    color: #A266BE;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.re{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ca-div{
+    margin-top: 30px;
+    color: #A266BE;
+}
+
+.ca-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.ca{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.caPrice{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#final{
+    margin-top: 250px;
+}
+
+#goal,
+#did{
+    display: flex;
+    justify-content: space-between;
+}
+
+#did{
+    margin-top: 5px;
+}
+.goal-title{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.goal-price{
+    color: #A266BE;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#did-price{
+    font-size: 24px;
+}
+
+#div{
+    color: #A266BE;
+    margin-bottom: 10px;
+}
