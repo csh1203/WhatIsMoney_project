@@ -101,3 +101,35 @@ function plus(event){
 function addDiary(){
     window.location.href = "/writeDiary.html";
 }
+
+// 클라이언트에서 컨트롤러 호출
+function getUserData() {
+    const userid = localStorage.getItem("userid"); // 현재 사용자의 아이디 또는 식별자
+    axios.post('http://localhost:3000/users/getUserData', {
+        userid: userid
+    })
+    .then((response) => {
+        const data = response.data.data; // 서버에서 반환한 데이터
+
+        // 데이터를 사용하거나 표시할 수 있음
+        console.log("불러온 데이터:", data);
+        var day = Number(data[0]['created_at'].substring(8, 10)) + 6
+        console.log(data[0]['status_today'])
+        if(data[0]['status_today'] == "good"){
+            document.getElementsByClassName('item')[day].innerHTML = `<img src="/images/coin1.png">`
+        }else if(data[0]['status_today'] == "fine"){
+            document.getElementsByClassName('item')[day].innerHTML = `<img src="/images/coin2.png">`
+        }else if(data[0]['status_today'] == "soso"){
+            document.getElementsByClassName('item')[day].innerHTML = `<img src="/images/coin3.png">`
+        }else if(data[0]['status_today'] == "poor"){
+            document.getElementsByClassName('item')[day].innerHTML = `<img src="/images/coin4.png">`
+        }else if(data[0]['status_today'] == "bad"){
+            document.getElementsByClassName('item')[day].innerHTML = `<img src="/images/coin5.png">`
+        }
+    })
+    .catch((error) => {
+        console.error('데이터 불러오기 중 오류:', error);
+    });
+}
+
+getUserData();
