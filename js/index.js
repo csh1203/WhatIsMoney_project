@@ -39,6 +39,13 @@ function finalCheck(){
   
       console.log(hasProfile);
   
+      if (hasProfile === 0) {
+        // hasProfile이 0이면 setting.html로 이동
+        window.location.href = "/setting.html";
+      } else {
+        // hasProfile이 1이면 calendar.html로 이동
+        window.location.href = "/calendar.html";
+      }
   
       alert("로그인 되었습니다.");
     })
