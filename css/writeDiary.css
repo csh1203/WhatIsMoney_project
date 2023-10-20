@@ -43,5 +43,120 @@
     height: 230px;
     border: none;
     outline: none;
-    background-color: ;
+    background-color: #FAF7FB;
+}
+
+.title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    font-weight: bold;
+}
+
+#plus_btn{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.price-inner-div{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-div{
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    height: 78px;
+    border-radius: 20px;
+    background-color: #FAF7FB;
+    display: flex;
+    align-items: center;
+}
+
+.coins{
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn{
+    width: 90%;
+    height: 48px;
+    margin-left: 5%;
+    margin-top: 100px;
+    border-radius: 30px;
+    border: none;
+    background-color: #A266BE;
+    color: white;
+    
+}
+
+#plus-div{
+    visibility: hidden;
+    position: fixed;
+    width: 70%;
+    height: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow : rgba(0,0,0,0.5) 0 0 0 9999px, rgba(0,0,0,0) 0 0 0 0;
+
+}
+
+select{
+    box-sizing: border-box;
+    width: calc(100% - 36px);
+    height: 42px;
+    padding: 0 20px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    -o-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-shadow: none;
+    background: url(/images/ep_arrow-up.svg) no-repeat 95% 50%; 
+}   
+select::-ms-expand{
+    display: none;
+}
+select:focus{
+    outline: 1px solid rgba(255, 102, 102, 1);
+    box-shadow: none;
+}
+option{
+    color:rgba(194, 194, 194, 1);
+}
+option:hover{
+    background-color: #ffff;
+}
+
+.size{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.plus-input{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 30px;
+    height: 40px;
+    border: 1px solid #D9D9D9;
+}
+
+#plus-div > button{
+    margin-top: 50px;
+    width: 200px;
+    margin
 }

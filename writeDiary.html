@@ -13,9 +13,37 @@
     </div>
     <div id="write-div">
         <input placeholder="제목" id="write-title">
-        <textarea id="main-text"></textarea>
+        <textarea placeholder="일기를 작성해주세요" id="main-text"></textarea>
     </div>
 
+    <div class="title">가계부 작성하기</div>
+    <img src="/images/plus_button.png" id="plus_btn" onclick="plus()">
+
+
+    <div class="title">오늘의 소비</div>
+    <div class="coins">
+        <img src="images/coin1.png" class="coin" onclick="coinChoice(event)">
+        <img src="images/coin2.png" class="coin" onclick="coinChoice(event)">
+        <img src="images/coin3.png" class="coin" onclick="coinChoice(event)">
+        <img src="images/coin4.png" class="coin" onclick="coinChoice(event)">
+        <img src="images/coin5.png" class="coin" onclick="coinChoice(event)">
+    </div>
+
+    <div id="plus-div" >
+        <div class="size">
+            <select name="" id="exer-unit">
+              <option value="value">set</option>
+              <option value="value">km</option>
+              <option value="value">sec</option>
+              <option value="value">min</option>
+            </select>
+          </div>
+          <input placeholder="제목" id="plus-title" class="plus-input">
+          <input placeholder="가격" id="plus-price" class="plus-input"><br>
+        <button>확인</button>
+    </div>
+    
+    <button id="btn" onclick="check()">작성 완료</button>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     <script src="js/writeDiary.js"></script>
 </body>
