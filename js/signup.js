@@ -37,7 +37,9 @@ function finalCheck(){
     if(pwInput.value === '') return alert('비밀번호를 입력해주세요');
     if(pwCheckInput.value === '') return alert('비밀번호 확인을 입력해주세요');
 
-    if(pwInput.value !== pwCheckInput.value) return alert('비밀번호를 확인해주세요')
+    if(pwInput.value !== pwCheckInput.value) return alert('비밀번호를 확인해주세요');
+
+    window.location.href = "/login.html"
 }
 
 function idInputFocus(){

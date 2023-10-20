@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main>
+        <div id="login-title">로그인</div>
+
+        <div id="form">
+        <div class="title">아이디</div>
+        <input placeholder="아이디 입력" id="id-input" class="input">
+        <div id="id-line" class="line"></div>
+
+        <div class="title">비밀번호</div>
+        <input placeholder="비밀번호 입력" id="pw-input" class="input">
+        <div id="pw-line" class="line"></div>
+        </div>
+        <div id="bottom">
+            <div>아이디 찾기 | 비밀번호 찾기</div>
+            <div onclick="location.href='signup.html'">회원가입</div>
+        </div>
+
+        <button id="check" onclick="finalCheck()">로그인</button>
+
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>
