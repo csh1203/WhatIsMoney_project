@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <main>
+        <div id="signup-title">회원가입</div>
+
+        <div class="title">아이디</div>
+        <div id="id-div">
+            <input placeholder="아이디 입력" id="id-input">
+            <button id="id-button" class="button" onclick="idCheck()">중복 확인</button>
+        </div>
+        <div id="id-line" class="line"></div>
+
+        <div class="title">비밀번호</div>
+        <input placeholder="비밀번호 입력" id="pw-input">
+        <div id="pw-line" class="line"></div>
+
+        <div class="title">비밀번호 확인</div>
+        <input placeholder="비밀번호 확인" id="pw-check-input">
+        <div id="pw-check-line" class="line"></div>
+        
+        <div class="title">이메일</div>
+        <div id="email-div">
+            <input placeholder="이메일 입력" id="email-input">
+            <button id="email-button" class="button" onclick="emailCheck()">번호 전송</button>
+        </div>
+        <div id="email-line" class="line"></div>
+
+        <div id="code-div">
+            <input placeholder="인증번호 입력" id="code-input">
+            <button id="code-button" class="button" onclick="codeCheck()">확인</button>
+        </div>
+        <div id="code-line" class="line"></div>
+
+        <button id="check" onclick="finalCheck()">확인</button>
+    </main>
+    <script src="js/signup.js"></script>
+</body>
+</html>

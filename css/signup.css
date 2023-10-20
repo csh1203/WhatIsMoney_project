@@ -1,0 +1,108 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#signup-title{
+    margin-top: 70px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title{
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+#id-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#id-input{
+    width: 262px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.button{
+    width: 66px;
+    height: 29px;
+    border-radius: 27px;
+    background-color: white;
+    font-size: 11px;
+    border-color: #9E9E9E;
+    color: #9E9E9E;
+    box-shadow: none;
+
+}
+
+.line{
+    margin-top: 10px;
+    height: 2px;
+    background: #BDBDBD;
+    border-radius: 10px;
+}
+
+#pw-input{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+#pw-check-input{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    border: none;
+    outline: none;
+}
+
+#email-input{
+    width: 262px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#email-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#code-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#code-input{
+    width: 262px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#check{
+    width: 100%;
+    margin-top: 213px;
+    margin-bottom: 30px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: #A266BE;
+    border: none;
+    color: white;
+}
