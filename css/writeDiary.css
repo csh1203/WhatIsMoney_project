@@ -67,6 +67,12 @@
     justify-content: space-between;
 }
 
+#name{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .price-div{
     width: 90%;
     margin-left: 5%;
@@ -76,6 +82,11 @@
     background-color: #FAF7FB;
     display: flex;
     align-items: center;
+}
+
+#total{
+    margin-right: 10px;
+    font-size: 18px;
 }
 
 .coins{
@@ -158,5 +169,10 @@ option:hover{
 #plus-div > button{
     margin-top: 50px;
     width: 200px;
-    margin
+    margin-left: 30px;
+    height: 30px;
+    background-color: #A266BE;
+    border: none;
+    border-radius: 30px;
+    color: white;
 }

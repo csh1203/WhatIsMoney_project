@@ -3,16 +3,6 @@ var title = document.getElementById('write-title');
 var main = document.getElementById('main-text');
 var plusDiv = document.getElementById('plus-div');
 function plus(){
-    let priceDiv = document.createElement('div');
-    let innerDiv = document.createElement('div');
-    innerDiv.className = "price-inner-div"
-    // innerDiv.innerHTML = `<div id = "name">총금액</div><div id="total">${event.target.innerHTML}</div>`;
-    priceDiv.className = "price-div";
-    priceDiv.appendChild(innerDiv);
-
-    
-    plusBtn.before(priceDiv);
-
     plusDiv.style.visibility = "visible";
 }
 
@@ -39,4 +29,26 @@ function check(){
     }
 
     alert('오늘의 소비 코인을 선택해주세요');
+}
+
+var option = document.getElementById('exer-unit');
+var titlee = document.getElementById('plus-title');
+var pricee = document.getElementById('plus-price');
+
+
+function closeDiv(){
+    console.log(option.value);
+    console.log(titlee.value);
+    console.log(pricee.value);
+    plusDiv.style.visibility = "hidden";
+
+    let priceDiv = document.createElement('div');
+    let innerDiv = document.createElement('div');
+    innerDiv.className = "price-inner-div"
+    innerDiv.innerHTML = `<div id = "name">${option.value}</div><div id="total"><div>${titlee.value}</div><div>${pricee.value}</div></div>`;
+    priceDiv.className = "price-div";
+    priceDiv.appendChild(innerDiv);
+
+    
+    plusBtn.before(priceDiv);
 }
