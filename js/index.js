@@ -21,5 +21,5 @@ function finalCheck(){
     if(idInput.value === "") return alert("아이디를 입력해주세요");
     if(pwInput.value === "") return alert("아이디를 입력해주세요");
 
-    window.location.href = "/main.html";
+    window.location.href = "/calendar.html";
 }
